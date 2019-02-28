@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/list_index_createdpart"
+    android:paddingRight="@dimen/pending_left_weight"
+    android:paddingLeft="@dimen/pending_left_weight"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/part_list_height">
+    <TextView
+        android:textColor="@color/colorBlack"
+        android:textSize="@dimen/textsize_medium"
+        android:layout_centerVertical="true"
+        android:id="@+id/index_partname"
+        android:text="教学区-1年级教学楼"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:textSize="@dimen/textsize_little"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/zhongduan"
+        android:id="@+id/index_terminals_amount"
+        android:text="0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:textSize="@dimen/textsize_little"
+        android:textColor="#888888"
+        android:layout_centerVertical="true"
+        android:id="@+id/zhongduan"
+        android:layout_alignParentRight="true"
+        android:text="个终端"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</RelativeLayout>

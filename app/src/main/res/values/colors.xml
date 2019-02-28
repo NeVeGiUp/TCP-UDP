@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="colorLogintext">#333333</color>
+    <color name="colorGray">#DDDDDD</color>
+    <color name="colorBlack">#000000</color>
+    <color name="tab_checked">#F4376D </color>
+    <color name="tab_unchecked">#9E9E9E</color>
+    <color name="colorTitle">#F0F0F0</color>
+    <color name="colorunderline">#d2d2d2</color>
+    <color name="colorMain">#C72251</color>
+    <color name="colorhint">#C0C0C0</color>
+    <color name="textColor">#FFFFFF</color>
+    <color name="warningColor">#E69930</color>
+    <color name="transparent">#00000000</color>
+    <color name="infoColor">#7787A8</color>
+    <color name="offlineColor">#E9E9E9</color>
+    <color name="create_ringing">#A6C5B7 </color>
+    <color name="bg_def_indicator">#799C8C</color>
+    <color name="indicator_slider">#C72251</color>
+    <color name="line_color">#799C8C</color>
+    <color name="line_gray">#D1D1D1</color>
+    <color name="color_canary_yellow">#FFF0CF</color>
+    <color name="color_execution">#DE9455</color>
+    <color name="color_font">#7787A8</color>
+    <color name="gray_999">#999999</color>
+    <color name="gray_C0C">#C0C0C0</color>
+    <color name="onlineColor">#B2E8CF</color>
+    <color name="onlineFontColor">#496E60</color>
+    <color name="clockColor">#FFEDCA</color>
+    <color name="clockFontColor">#AD5700</color>
+    <drawable name="color_not_select">#000000</drawable>
+    <drawable name="color_select">#C72551</drawable>
+    <color name="line_hui">#dedede</color>
+    <color name="color_circle_green">#91C1AB</color>
+    <color name="color_not_select">#000000</color>
+    <color name="color_select">#C72551</color>
+    <color name="grag_666">#666666</color>
+
+    <!--定时任务状态颜色-->
+    <color name="color_not_started_bg">#D2EDF5</color>
+    <color name="color_not_started_text">#597A8E</color>
+    <color name="color_running_text">#496E60</color>
+    <color name="color_running_bg">#B2E8CF</color>
+    <color name="color_over_bg">#EBEBEB</color>
+    <color name="color_over_text">#888888</color>
+    <color name="color_ban_bg">#FFD6CA</color>
+    <color name="color_ban_text">#A93858</color>
+    <color name="color_seek_bar">#29AE77</color>
+    <color name="color_status_online">#3BB080</color>
+    <color name="color_status_lx">#888888</color>
+    <color name="color_status_ml">#C72251</color>
+    <color name="color_toast_bg">#f9dcb4</color>
+    <color name="color_toast_text">#c17714</color>
+    <color name="task_exception">#AD5700</color>
+
+
+</resources>

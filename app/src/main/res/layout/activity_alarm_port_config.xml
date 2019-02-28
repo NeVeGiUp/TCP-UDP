@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/colorMain">
+
+        <ImageView
+            android:id="@+id/bt_back_event"
+            android:layout_width="20dp"
+            android:layout_height="34dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:src="@mipmap/top_but_back_default" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="端口"
+            android:textColor="@color/textColor"
+            android:textSize="17sp" />
+
+        <LinearLayout
+            android:id="@+id/ll_done"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="完成"
+                android:textColor="@color/colorWhite"
+                android:textSize="14sp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@color/colorWhite">
+
+        <EditText
+            android:id="@+id/et_task_name"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:background="@null"
+            android:hint="请填写端口名"
+            android:maxLines="1"
+            android:paddingLeft="30dp"
+            android:paddingRight="30dp"
+            android:textSize="14sp"
+            android:maxLength="15"
+            android:maxEms="15"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignBottom="@id/et_task_name"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:background="#e7e7e7"
+            android:paddingTop="5dp" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="#E9E9E9" />
+
+    <RelativeLayout
+        android:background="@color/colorWhite"
+        android:id="@+id/rl_select_music"
+        android:clickable="true"
+        android:focusable="true"
+        android:layout_width="match_parent"
+        android:layout_height="49dp">
+        <ImageView
+            android:layout_width="@dimen/image_size"
+            android:layout_height="@dimen/image_size"
+            android:src="@mipmap/common_icon_xuanzeyinyue_default"
+            android:layout_marginLeft="21dp"
+            android:layout_centerVertical="true"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="55dp"
+            android:text="选择音乐"
+            android:textColor="#666666"
+            android:textSize="15sp"
+            android:layout_centerVertical="true" />
+        <TextView
+            android:textColor="@color/colorBlack"
+            android:textSize="15sp"
+            android:layout_marginRight="35dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:id="@+id/tv_select_music"
+            android:gravity="right"
+            android:layout_width="160dp"
+            android:lines="1"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:layout_width="7dp"
+            android:layout_height="12dp"
+            android:src="@mipmap/common_icon_jinru_default"
+            android:layout_alignParentRight="true"
+            android:layout_marginEnd="20dp"
+            android:layout_centerVertical="true"
+            />
+        <View
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_height="1dp"
+            android:background="#e7e7e7">
+        </View>
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/rl_alarm_response_device"
+        android:layout_width="match_parent"
+        android:layout_height="49dp"
+        android:background="@color/colorWhite"
+        android:clickable="true"
+        android:focusable="true">
+
+        <ImageView
+            android:layout_width="17dp"
+            android:layout_height="17dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="21dp"
+            android:src="@mipmap/common_icon_xiangyingshebei_default" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="53dp"
+            android:text="响应设备"
+            android:textColor="#666666"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/tv_alarm_response_device_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="38dp"
+            android:text="未配置"
+
+            android:textColor="@color/colorBlack"
+            android:textSize="15sp" />
+
+        <ImageView
+            android:layout_width="12dp"
+            android:layout_height="12dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="20dp"
+            android:src="@mipmap/common_icon_jinru_default" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_alarm_response_device"
+        android:orientation="vertical"
+        android:paddingTop="20dp"
+        android:paddingRight="20dp"
+        android:paddingLeft="20dp"
+        android:background="#f8fcff"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_centerVertical="true"
+                android:textSize="13sp"
+                android:textColor="@color/infoColor"
+                android:text="已选终端"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <Button
+                android:id="@+id/btn_get_device"
+                android:layout_centerVertical="true"
+                android:background="@drawable/loginout"
+                android:textColor="@color/textColor"
+                android:textSize="@dimen/textsize_little"
+                android:layout_alignParentRight="true"
+                android:text="修改"
+                android:layout_width="50dp"
+                android:layout_height="24dp" />
+        </RelativeLayout>
+        <TextView
+            android:id="@+id/tv_alarm_response_device"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:lineSpacingExtra="5dp"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#f6f6f6"
+        android:gravity="bottom"
+        android:orientation="vertical">
+        <Button
+            android:id="@+id/btn_clear_config"
+            android:layout_width="match_parent"
+            android:layout_height="49dp"
+            android:background="#3D3C3F"
+            android:textColor="#929292"
+            android:textSize="17sp"
+            android:text="清除配置"/>
+        <Button
+            android:visibility="gone"
+            android:id="@+id/btn_clear_config_gone"
+            android:layout_width="match_parent"
+            android:layout_height="49dp"
+            android:background="#ECECEC"
+            android:textColor="#C3C3C3"
+            android:textSize="17sp"
+            android:text="清除配置"/>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/topbar_height"
+        android:background="@color/colorMain">
+        <ImageView
+            android:id="@+id/bt_back_event"
+            android:layout_width="20dp"
+            android:layout_height="34dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:src="@mipmap/top_but_back_default" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="音源类型"
+            android:textColor="@color/textColor"
+            android:textSize="17sp" />
+        <Button
+            android:layout_marginRight="-10dp"
+            android:id="@+id/bt_save_source_type"
+            android:background="@null"
+            android:textSize="14sp"
+            android:textColor="@color/colorWhite"
+            android:text="保存"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            />
+    </RelativeLayout>
+    <TextView
+        android:paddingLeft="20dp"
+        android:gravity="center_vertical"
+        android:textColor="#666666"
+        android:text="音源类型优先级 E > P > S。"
+        android:background="#f2f2f2"
+        android:layout_width="match_parent"
+        android:layout_height="30dp" />
+    <TextView
+        android:textSize="14sp"
+        android:paddingLeft="20dp"
+        android:gravity="center_vertical"
+        android:background="@color/colorWhite"
+        android:textColor="#7787A8"
+        android:text="音源类型"
+        android:layout_width="match_parent"
+        android:layout_height="50dp" />
+    <RelativeLayout
+        android:paddingRight="@dimen/pending_left_weight"
+        android:paddingLeft="20dp"
+        android:background="@color/colorWhite"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+            <TextView
+                android:text="S1"
+                android:gravity="center"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/textsize_medium"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:text="S2"
+                android:gravity="center"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/textsize_medium"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:text="S3"
+                android:gravity="center"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/textsize_medium"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:text="S4"
+                android:gravity="center"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/textsize_medium"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:text="S5"
+                android:gravity="center"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/textsize_medium"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:text="P1"
+                android:gravity="center"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/textsize_medium"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:text="P2"
+                android:gravity="center"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/textsize_medium"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:text="P3"
+                android:gravity="center"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/textsize_medium"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/tv_e1"
+                android:text="E1"
+                android:gravity="center"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/textsize_medium"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/tv_e2"
+                android:text="E2"
+                android:gravity="center"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/textsize_medium"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/tv_e3"
+                android:text="E3"
+                android:gravity="center"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/textsize_medium"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <RadioGroup
+            android:layout_alignParentRight="true"
+            android:id="@+id/rg_source_type"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+            <RadioButton
+                android:id="@+id/rb_source_s1"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <RadioButton
+                android:id="@+id/rb_source_s2"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <RadioButton
+                android:id="@+id/rb_source_s3"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <RadioButton
+                android:id="@+id/rb_source_s4"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <RadioButton
+                android:id="@+id/rb_source_s5"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <RadioButton
+                android:id="@+id/rb_source_p1"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <RadioButton
+                android:id="@+id/rb_source_p2"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <RadioButton
+                android:id="@+id/rb_source_p3"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <RadioButton
+                android:id="@+id/rb_source_e1"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <RadioButton
+                android:id="@+id/rb_source_e2"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <RadioButton
+                android:id="@+id/rb_source_e3"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RadioGroup>
+    </RelativeLayout>
+</LinearLayout>

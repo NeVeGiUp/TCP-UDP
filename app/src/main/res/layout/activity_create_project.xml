@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.login.CreateProjectActivity">
+    <RelativeLayout
+        android:id="@+id/rl_topbar"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/colorMain">
+        <RelativeLayout
+            android:background="?android:attr/selectableItemBackground"
+            android:clickable="true"
+            android:focusable="true"
+            android:id="@+id/rl_back"
+            android:layout_width="60dp"
+            android:layout_height="match_parent">
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="34dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/pending_left_weight"
+                android:src="@mipmap/top_but_back_default" />
+        </RelativeLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="新建项目"
+            android:textColor="#FFFFFF"
+            android:textSize="17sp" />
+    </RelativeLayout>
+    <Button
+        android:id="@+id/bt_create_project"
+        android:layout_alignParentBottom="true"
+        android:textColor="@color/colorMain"
+        android:text="确认创建"
+        android:background="@color/colorWhite"
+        android:layout_width="match_parent"
+        android:layout_height="48dp" />
+    <FrameLayout
+        android:layout_marginBottom="10dp"
+        android:layout_above="@id/bt_create_project"
+        android:layout_below="@id/rl_topbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ScrollView
+            android:scrollbars="none"
+            android:orientation="vertical"
+            android:paddingRight="20dp"
+            android:paddingLeft="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:textSize="14sp"
+                    android:layout_marginTop="22dp"
+                    android:text="机械码"
+                    android:textColor="@color/colorBlack"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <android.support.design.widget.TextInputLayout
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <EditText
+                        android:id="@+id/et_machine_code"
+                        android:theme="@style/MyEditText"
+                        android:textSize="13sp"
+                        android:hint="请输入项目的机器码（必填）"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+                </android.support.design.widget.TextInputLayout>
+                <TextView
+                    android:textSize="14sp"
+                    android:layout_marginTop="22dp"
+                    android:text="项目信息"
+                    android:textColor="@color/colorBlack"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <android.support.design.widget.TextInputLayout
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <EditText
+                        android:id="@+id/et_project_name"
+                        android:theme="@style/MyEditText"
+                        android:textSize="13sp"
+                        android:hint="请输入项目名称（必填）"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+                </android.support.design.widget.TextInputLayout>
+                <android.support.design.widget.TextInputLayout
+
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <EditText
+                        android:id="@+id/et_project_owner"
+                        android:theme="@style/MyEditText"
+                        android:textSize="13sp"
+                        android:hint="请输入项目负责人（必填）"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+                </android.support.design.widget.TextInputLayout>
+                <android.support.design.widget.TextInputLayout
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <EditText
+                        android:id="@+id/et_owner_phone"
+                        android:theme="@style/MyEditText"
+                        android:textSize="13sp"
+                        android:hint="请输入联系电话（必填）"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+                </android.support.design.widget.TextInputLayout>
+                <android.support.design.widget.TextInputLayout
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <EditText
+                        android:id="@+id/et_owner_email"
+                        android:theme="@style/MyEditText"
+                        android:textSize="13sp"
+                        android:hint="请输入联系邮箱（必填）"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+                </android.support.design.widget.TextInputLayout>
+                <android.support.design.widget.TextInputLayout
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <EditText
+                        android:id="@+id/et_owner_unit"
+                        android:theme="@style/MyEditText"
+                        android:textSize="13sp"
+                        android:hint="请输入所属单位（必填）"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+                </android.support.design.widget.TextInputLayout>
+                <android.support.design.widget.TextInputLayout
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <EditText
+                        android:id="@+id/et_owner_address"
+                        android:theme="@style/MyEditText"
+                        android:textSize="13sp"
+                        android:hint="地址（必填）"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+                </android.support.design.widget.TextInputLayout>
+                <RelativeLayout
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/bg_remarks"
+                    android:layout_centerInParent="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="85dp">
+                    <EditText
+                        android:id="@+id/et_remarks"
+                        android:textSize="13sp"
+                        android:gravity="top"
+                        android:hint="备注"
+                        android:inputType="textMultiLine"
+                        android:maxLines="50"
+                        android:background="@null"
+                        android:paddingTop="5.5dp"
+                        android:paddingLeft="9dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+                </RelativeLayout>
+            </LinearLayout>
+        </ScrollView>
+    </FrameLayout>
+</RelativeLayout>

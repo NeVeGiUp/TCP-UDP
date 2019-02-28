@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:paddingLeft="20dp"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <CheckBox
+        android:text="终端"
+        android:id="@+id/cb_terminal_name"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/part_list_height" />
+    <TextView
+        android:id="@+id/tv_bind_terminal_mac"
+        android:layout_width="0dp"
+        android:layout_height="0dp" />
+</LinearLayout>

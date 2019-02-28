@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/colorMain">
+        <ImageView
+            android:id="@+id/bt_back_event"
+            android:layout_width="20dp"
+            android:layout_height="34dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:src="@mipmap/top_but_back_default" />
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="优先级"
+            android:textColor="#FFFFFF"
+            android:textSize="17sp" />
+        <TextView
+            android:id="@+id/tv_selected"
+            android:textSize="14sp"
+            android:textColor="@color/colorWhite"
+            android:text="选定"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            />
+    </RelativeLayout>
+    <RelativeLayout
+        android:background="@color/colorWhite"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:paddingLeft="20dp"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="140dp">
+            <TextView
+                android:gravity="center_vertical"
+                android:layout_weight="1"
+                android:textColor="@color/colorBlack"
+                android:textSize="15sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="普通" />
+            <TextView
+                android:gravity="center_vertical"
+                android:layout_weight="1"
+                android:textColor="@color/colorBlack"
+                android:textSize="15sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="高级" />
+            <TextView
+                android:gravity="center_vertical"
+                android:layout_weight="1"
+                android:textColor="@color/colorBlack"
+                android:textSize="15sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="重要" />
+            <TextView
+                android:visibility="gone"
+                android:gravity="center_vertical"
+                android:layout_weight="1"
+                android:textColor="@color/colorBlack"
+                android:textSize="15sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="紧急" />
+
+        </LinearLayout>
+        <RadioGroup
+            android:id="@+id/rg_playmode"
+            android:layout_marginRight="20dp"
+            android:layout_alignParentRight="true"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="140dp">
+            <RadioButton
+                android:id="@+id/bt_ordinary"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <RadioButton
+                android:id="@+id/bt_senior"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <RadioButton
+                android:id="@+id/bt_important"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <RadioButton
+                android:visibility="gone"
+                android:id="@+id/bt_urgent"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RadioGroup>
+
+    </RelativeLayout>
+</LinearLayout>

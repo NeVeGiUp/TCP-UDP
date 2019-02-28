@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="#F6F6F6"/>
+    <RelativeLayout
+        android:background="@color/colorWhite"
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+        <TextView
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:textColor="#7787a8"
+            android:textSize="16sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="定时任务"
+            />
+        <TextView
+            android:id="@+id/tv_more"
+            android:layout_marginRight="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:textColor="@color/colorMain"
+            android:textSize="12sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="更多>"
+            />
+    </RelativeLayout>
+    <LinearLayout
+        android:id="@+id/ll_add_task"
+        android:visibility="gone"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+        <Button
+            android:id="@+id/btn_add_task"
+            android:textColor="@color/colorWhite"
+            android:text="添加定时任务"
+            android:background="@drawable/loginout"
+            android:layout_width="250dp"
+            android:layout_height="40dp" />
+    </LinearLayout>
+    <android.support.v7.widget.RecyclerView
+        android:paddingTop="20dp"
+        android:id="@+id/list_index_timedtask"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</LinearLayout>

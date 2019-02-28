@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.personal.DepolySystemActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/topbar_height"
+        android:background="@color/colorMain">
+        <RelativeLayout
+            android:background="?android:attr/selectableItemBackground"
+            android:clickable="true"
+            android:focusable="true"
+            android:id="@+id/rl_back"
+            android:layout_width="60dp"
+            android:layout_height="match_parent">
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="34dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/pending_left_weight"
+                android:src="@mipmap/top_but_back_default" />
+        </RelativeLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="系统部署"
+            android:textColor="@color/textColor"
+            android:textSize="@dimen/textsize_topbar" />
+    </RelativeLayout>
+    <LinearLayout
+        android:paddingRight="15dp"
+        android:paddingTop="13dp"
+        android:paddingLeft="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="128dp">
+        <LinearLayout
+            android:orientation="vertical"
+            android:background="@drawable/bg_remarks"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <LinearLayout
+            android:paddingTop="13dp"
+            android:paddingRight="23dp"
+            android:paddingLeft="23dp"
+            android:layout_width="match_parent"
+            android:layout_height="37dp">
+            <TextView
+                android:textColor="@color/colorBlack"
+                android:text="目标主机IP："
+                android:layout_gravity="center"
+                android:textSize="14sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <RelativeLayout
+                android:layout_marginLeft="3dp"
+                android:background="@drawable/bg_remarks"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <EditText
+                    android:id="@+id/et_target_timer_ip"
+                    android:background="@null"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+            </RelativeLayout>
+        </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:paddingRight="23dp"
+                android:paddingLeft="23dp"
+                android:layout_marginTop="13dp"
+                android:layout_width="match_parent"
+                android:layout_height="37dp">
+                <Button
+                    android:id="@+id/bt_s_device"
+                    android:textColor="@color/colorWhite"
+                    android:text="搜索局域网内设备"
+                    android:background="@drawable/loginout"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent" />
+                <Button
+                    android:id="@+id/bt_config_device"
+                    android:textColor="@color/colorWhite"
+                    android:text="配置已选设备"
+                    android:background="@drawable/loginout"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <ListView
+        android:divider="@null"
+        android:id="@+id/list_depoly_system"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+</LinearLayout>

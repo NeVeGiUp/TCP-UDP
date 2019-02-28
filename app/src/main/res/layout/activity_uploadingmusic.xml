@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorMain"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/colorMain">
+        <TextView
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:paddingRight="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_centerVertical="true"
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="正在上传到古典音乐文件夹"
+            android:textColor="#FFFFFF"
+            android:textSize="17sp" />
+    </RelativeLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:background="@color/colorWhite"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:textSize="15sp"
+            android:gravity="center"
+            android:text="请稍等"
+            android:drawableTop="@mipmap/music_image_upload_default"
+            android:layout_marginTop="140dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+        <TextView
+            android:id="@+id/tv_doing_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="当前已上传1首歌"
+            />
+        <Button
+            android:id="@+id/cancel_uploading"
+            android:textSize="17sp"
+            android:textColor="#9CB9AC"
+            android:layout_marginTop="50dp"
+            android:text="取消上传"
+            android:background="@drawable/bg_whitebtn"
+            android:layout_width="150dp"
+            android:layout_height="50dp" />
+    </LinearLayout>
+</LinearLayout>

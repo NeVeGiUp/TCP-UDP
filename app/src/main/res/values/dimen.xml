@@ -1,0 +1,25 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="more_window_item_margin">12dp</dimen>
+    <dimen name="textSize">28sp</dimen>
+    <dimen name="login_editview">60dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="topbar_height">48dp</dimen> <!--顶部标题栏高度-->
+    <dimen name="list_height">40dp</dimen> <!-- 列表高度-->
+    <dimen name="pending_left_weight">20dp</dimen> <!-- 距离左的距离-->
+    <dimen name="image_size">19dp</dimen>
+    <dimen name="part_list_height">47dp</dimen>
+    <dimen name="more_but_height">60dp</dimen>
+    <dimen name="terminal_list_height">90dp</dimen>
+    <dimen name="textsize_little">12sp</dimen>
+    <dimen name="textsize_medium">14sp</dimen>
+    <dimen name="textsize_topbar">18sp</dimen>
+    <dimen name="indicator_tv_size">15sp</dimen>
+
+    <dimen name="tab_padding">5dp</dimen>
+
+    <dimen name="px2">2px</dimen>
+
+</resources>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorMain"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/topbar_height"
+        android:background="@color/colorMain">
+
+        <ImageView
+            android:id="@+id/bt_back"
+            android:layout_width="20dp"
+            android:layout_height="34dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/pending_left_weight"
+            android:src="@mipmap/top_but_back_default" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="选择音乐"
+            android:textColor="@color/textColor"
+            android:textSize="@dimen/textsize_topbar" />
+
+        <TextView
+            android:id="@+id/tv_save_music"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            android:text="保存"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/textsize_medium" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorWhite"
+        android:paddingRight="15dp"
+        android:paddingTop="10dp"
+        android:gravity="right">
+        <TextView
+            android:id="@+id/tv_check_size"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="已选择:0" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/list_choose_music"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorWhite" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorWhite" />
+</LinearLayout>

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#3D3C3F"
+    android:orientation="vertical">
+    <TextView
+        android:id="@+id/music_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:text="渔舟唱晚"
+        android:textColor="#FDDC9F"
+        android:textSize="14sp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        />
+    <TextView
+        android:id="@+id/music_folder_source"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="5dp"
+        android:textColor="#999999"
+        android:layout_marginLeft="20dp"
+        android:text="来自文件夹《纯音乐》"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#656565">
+    </View>
+    <LinearLayout
+        android:layout_marginTop="28dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/bottom_delete"
+            android:layout_weight="1"
+            android:src="@mipmap/music_but_del_default"
+            android:layout_width="50dp"
+            android:layout_height="50dp" />
+        <ImageView
+            android:id="@+id/bottom_trans"
+            android:layout_weight="1"
+            android:src="@mipmap/music_but_transfer_default"
+            android:layout_width="50dp"
+            android:layout_height="50dp" />
+        <ImageView
+            android:id="@+id/bottom_copy"
+            android:layout_weight="1"
+            android:src="@mipmap/music_but_copy_default"
+            android:layout_width="50dp"
+            android:layout_height="50dp" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:textColor="#929292"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="14sp"
+            android:text="删除"
+            />
+        <TextView
+            android:textColor="#929292"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:layout_weight="1"
+            android:text="转移" />
+        <TextView
+            android:textColor="#929292"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="14sp"
+            android:text="复制" />
+
+    </LinearLayout>
+    <View
+        android:layout_marginTop="25dp"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#656565">
+    </View>
+    <TextView
+        android:id="@+id/tv_cancel_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:drawablePadding="16dp"
+        android:gravity="center"
+        android:text="取消"
+        android:textColor="#666666"
+        android:textSize="18sp"/>
+</LinearLayout>

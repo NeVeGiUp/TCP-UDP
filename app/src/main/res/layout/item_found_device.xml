@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:background="?android:attr/selectableItemBackground"
+    android:orientation="vertical"
+    android:id="@+id/device_content_rl"
+    android:paddingRight="@dimen/pending_left_weight"
+    android:paddingLeft="@dimen/pending_left_weight"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:clickable="true"
+    android:focusable="true"
+    android:layout_height="@dimen/terminal_list_height">
+    <TextView        android:textColor="@color/colorBlack"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"
+        android:text="设备名"
+        android:id="@+id/device_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <RelativeLayout
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/device_ip"
+            android:text="192.168.0.1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/device_status"
+            android:layout_alignParentRight="true"
+            android:gravity="center"
+            android:layout_width="50dp"
+            android:layout_height="20dp" />
+    </RelativeLayout>
+    <View
+        android:background="#dddddd"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"/>
+</LinearLayout>

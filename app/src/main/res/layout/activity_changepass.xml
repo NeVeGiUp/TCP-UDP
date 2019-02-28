@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorMain"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/colorMain">
+        <ImageView
+            android:id="@+id/bt_back_personal"
+            android:layout_width="20dp"
+            android:layout_height="34dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:src="@mipmap/top_but_back_default" />
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="2dp"
+            android:text="修改设备密码 "
+            android:textColor="#FFFFFF"
+            android:textSize="17sp" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:background="@color/colorWhite"
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+        <EditText
+            android:id="@+id/et_original_password"
+            android:inputType="textPassword"
+            android:textSize="18sp"
+            android:background="@null"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:hint="请输入原设备密码"
+            android:layout_width="345dp"
+            android:layout_height="30dp" />
+        <View
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:layout_width="345dp"
+            android:layout_height="0.5dp"
+            android:background="#e7e7e7"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:background="@color/colorWhite"
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+        <LinearLayout
+            android:id="@+id/wrong_pass"
+            android:background="#FFF7E2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/tv_wrong_password"
+            android:textSize="12sp"
+            android:layout_marginLeft="20dp"
+            android:gravity="center_vertical"
+            android:textColor="#E69930"
+            android:text="密码错误！"
+            android:layout_width="match_parent"
+            android:layout_height="30dp" />
+        </LinearLayout>
+        <EditText
+            android:id="@+id/et_new_password"
+            android:inputType="textPassword"
+            android:textSize="18sp"
+            android:background="@null"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:hint="请输入新设备密码"
+            android:layout_width="345dp"
+            android:layout_height="30dp" />
+        <View
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:layout_width="345dp"
+            android:layout_height="0.5dp"
+            android:background="#e7e7e7"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:background="@color/colorWhite"
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+        <EditText
+            android:inputType="textPassword"
+            android:id="@+id/confrim_pass_again"
+            android:textSize="18sp"
+            android:background="@null"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:hint="请再次确认设备密码"
+            android:layout_width="345dp"
+            android:layout_height="30dp" />
+        <View
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:layout_width="345dp"
+            android:layout_height="0.5dp"
+            android:background="#e7e7e7"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:background="@color/colorWhite"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:id="@+id/wrong_double_pass"
+            android:background="#FFF7E2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:textSize="12sp"
+                android:layout_marginLeft="20dp"
+                android:gravity="center_vertical"
+                android:textColor="#E69930"
+                android:text="两次输入的密码不一致！"
+                android:layout_width="match_parent"
+                android:layout_height="30dp" />
+        </LinearLayout>
+        <Button
+            android:id="@+id/bt_editpass"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/loginout"
+            android:text="修改密码"
+            android:textColor="@color/colorWhite" />
+
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:paddingRight="@dimen/pending_left_weight"
+    android:paddingLeft="@dimen/pending_left_weight"
+    android:gravity="center"
+    android:orientation="horizontal"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="50dp">
+    <TextView
+        android:textColor="@color/colorBlack"
+        android:layout_weight="3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="音乐标题"
+        android:textSize="16sp"
+        />
+    <TextView
+        android:textColor="@color/colorBlack"
+        android:layout_weight="1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="音乐时长"
+        android:textSize="16sp"
+        />
+    <ImageView
+        android:layout_weight="1"
+        android:src="@mipmap/music_but_edit_default"
+        android:layout_width="16dp"
+        android:layout_height="16dp" />
+</LinearLayout>

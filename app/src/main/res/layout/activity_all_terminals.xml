@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorMain"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/topbar_height"
+        android:background="@color/colorMain">
+        <ImageView
+            android:id="@+id/bt_back_personal"
+            android:layout_width="20dp"
+            android:layout_height="34dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/pending_left_weight"
+            android:src="@mipmap/top_but_back_default" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="终端设备"
+            android:textColor="@color/textColor"
+            android:textSize="@dimen/textsize_topbar" />
+    </RelativeLayout>
+    <LinearLayout
+        android:gravity="center_vertical"
+        android:background="@color/colorWhite"
+        android:layout_width="match_parent"
+        android:layout_height="49dp">
+    <Button
+        android:id="@+id/bt_filter"
+        android:drawableRight="@mipmap/common_icon_xiala_default"
+        android:background="@null"
+        android:textColor="@color/colorBlack"
+        android:text="筛选"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/ll_all_terminal_filter"
+        android:paddingLeft="@dimen/pending_left_weight"
+        android:background="#FFF7E2"
+        android:layout_width="match_parent"
+        android:layout_height="30dp">
+    <TextView
+        android:id="@+id/tv_all_terminal_filter"
+       android:layout_gravity="center"
+        android:textSize="@dimen/textsize_little"
+        android:textColor="#E69930"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    </LinearLayout>
+    <ListView
+        android:background="@color/colorWhite"
+        android:id="@+id/list_terminals"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <View
+        android:background="@color/colorWhite"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+</LinearLayout>

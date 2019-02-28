@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <!--<ListView-->
+        <!--android:id="@+id/listpop_listview"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:divider="@color/line_hui"-->
+        <!--android:dividerHeight="@dimen/px1"-->
+        <!--android:scrollbars="none"-->
+        <!--android:visibility="gone"></ListView>-->
+    <!--<LinearLayout-->
+        <!--android:gravity="center"-->
+        <!--android:background="#b3b3b3"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content">-->
+        <!--<ImageView-->
+            <!--android:src="@drawable/shape_triangle"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content" />-->
+    <!--</LinearLayout>-->
+
+    <TextView
+        android:id="@+id/all_task_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorWhite"
+        android:gravity="center"
+        android:padding="14dp"
+        android:text="全部任务" />
+
+    <View
+        android:background="@color/colorGray"
+        android:layout_width="match_parent"
+        android:layout_height="0.5px"></View>
+
+    <TextView
+        android:id="@+id/ring_task_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorWhite"
+        android:gravity="center"
+        android:padding="14dp"
+        android:text="打铃任务" />
+
+    <View
+        android:background="@color/colorGray"
+        android:layout_width="match_parent"
+        android:layout_height="0.5px"></View>
+
+    <TextView
+        android:id="@+id/timing_task_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorWhite"
+        android:gravity="center"
+        android:padding="14dp"
+        android:text="定时任务" />
+
+    <View
+        android:background="@color/colorGray"
+        android:layout_width="match_parent"
+        android:layout_height="0.5px"></View>
+</LinearLayout>

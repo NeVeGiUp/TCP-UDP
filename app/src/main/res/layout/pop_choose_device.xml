@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    android:background="@color/colorWhite"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:background="#b3b3b3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_marginLeft="50dp"
+            android:src="@drawable/shape_triangle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <TextView
+        android:paddingRight="@dimen/pending_left_weight"
+        android:paddingLeft="@dimen/pending_left_weight"
+        android:layout_marginTop="20dp"
+        android:paddingBottom="10dp"
+        android:textColor="@color/colorBlack"
+        android:text="请选择分区"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <GridView
+        android:paddingRight="@dimen/pending_left_weight"
+        android:paddingLeft="@dimen/pending_left_weight"
+        android:id="@+id/gv_device_type"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:horizontalSpacing="10dp"
+        android:verticalSpacing="10dp"
+        android:numColumns="3"
+        android:gravity="center"
+        />
+    <TextView
+        android:visibility="invisible"
+        android:paddingRight="@dimen/pending_left_weight"
+        android:paddingLeft="@dimen/pending_left_weight"
+        android:paddingTop="30dp"
+        android:paddingBottom="10dp"
+        android:textColor="@color/colorBlack"
+        android:text="终端状态"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <GridView
+        android:paddingRight="@dimen/pending_left_weight"
+        android:paddingLeft="@dimen/pending_left_weight"
+        android:id="@+id/gv_device_status"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:horizontalSpacing="10dp"
+        android:verticalSpacing="10dp"
+        android:numColumns="3"
+        android:gravity="center"
+        />
+    <LinearLayout
+        android:paddingRight="@dimen/pending_left_weight"
+        android:paddingLeft="@dimen/pending_left_weight"
+        android:layout_marginTop="40dp"
+        android:paddingBottom="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <!--<Button-->
+            <!--android:id="@+id/btn_reset"-->
+            <!--android:layout_marginRight="10dp"-->
+            <!--android:layout_weight="1"-->
+            <!--android:text="重置"-->
+            <!--android:background="@drawable/bg_whitebtn"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content" />-->
+        <Button
+            android:id="@+id/btn_filter"
+            android:layout_weight="1"
+            android:textColor="@color/colorWhite"
+            android:text="筛选"
+            android:background="@drawable/loginout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+</LinearLayout>

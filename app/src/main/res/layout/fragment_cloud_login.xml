@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_marginTop="50dp"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_gravity="center_horizontal"
+        android:src="@mipmap/logo" />
+    <TextView
+        android:layout_marginTop="28dp"
+        android:textColor="@color/colorBlack"
+        android:textSize="@dimen/textsize_topbar"
+        android:layout_gravity="center"
+        android:text="云播"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <LinearLayout
+        android:orientation="vertical"
+        android:paddingRight="30dp"
+        android:paddingLeft="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="120dp">
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="95dp"
+                android:layout_height="wrap_content"
+                android:text="@string/phone_number"
+                android:textColor="@color/grag_666"
+                android:textSize="@dimen/textsize_medium" />
+
+            <com.itc.smartbroadcast.widget.custom.ClearEditText
+                android:inputType="number"
+                android:id="@+id/et_Phone"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@null"
+                android:digits="0123456789"
+                android:hint="@string/insert_phone_number"
+                android:lines="1"
+                android:maxLength="20"
+                android:textColorHint="@color/gray_C0C"
+                android:textSize="@dimen/textsize_medium" />
+        </LinearLayout>
+        <View
+            android:background="#DDDDDD"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"/>
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="95dp"
+                android:layout_height="wrap_content"
+                android:text="@string/userpsw"
+                android:textColor="@color/grag_666"
+                android:textSize="@dimen/textsize_medium" />
+
+            <com.itc.smartbroadcast.widget.custom.ClearEditText
+                android:id="@+id/et_password"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@null"
+                android:digits="0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+                android:hint="@string/input_userpsw"
+                android:inputType="textPassword"
+                android:lines="1"
+                android:maxLength="6"
+                android:textColorHint="@color/gray_C0C"
+                android:textSize="@dimen/textsize_medium" />
+        </LinearLayout>
+        <View
+            android:background="#DDDDDD"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"/>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_marginTop="32dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp">
+        <Button
+            android:id="@+id/bt_login"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/loginout"
+            android:text="@string/login"
+            android:textColor="@color/colorWhite" />
+        <RelativeLayout
+            android:layout_marginTop="18dp"
+            android:layout_below="@+id/bt_login"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/tv_reg"
+                android:layout_width="65dp"
+                android:layout_height="18dp"
+                android:text="@string/register"
+                android:textSize="@dimen/textsize_little" />
+            <TextView
+                android:layout_alignParentRight="true"
+                android:id="@+id/forget_psw_tv"
+                android:layout_width="65dp"
+                android:layout_height="18dp"
+                android:layout_gravity="right"
+                android:text="@string/forget_psw"
+                android:textSize="@dimen/textsize_little" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/version_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="30dp"
+        android:text="V1.3.6" />
+    <TextView
+        android:visibility="gone"
+        android:text="@string/language"
+        android:layout_gravity="bottom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</LinearLayout>

@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/topbar_height"
+        android:background="@color/colorMain">
+        <ImageView
+            android:id="@+id/bt_back_event"
+            android:layout_width="20dp"
+            android:layout_height="34dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/pending_left_weight"
+            android:src="@mipmap/top_but_back_default" />
+        <TextView
+            android:id="@+id/tv_edit_scheme_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="批量修改打铃任务"
+            android:textColor="@color/textColor"
+            android:textSize="17sp" />
+
+        <LinearLayout
+            android:id="@+id/ll_done"
+            android:layout_alignParentEnd="true"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:gravity="center">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:textSize="15sp"
+                android:textColor="@color/colorWhite"
+                android:text="完成"/>
+        </LinearLayout>
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="#F6F6F6"/>
+    <RelativeLayout
+        android:background="@color/colorWhite"
+        android:id="@+id/bt_startdate"
+        android:clickable="true"
+        android:focusable="true"
+        android:layout_width="match_parent"
+        android:layout_height="49dp">
+        <ImageView
+            android:layout_width="@dimen/image_size"
+            android:layout_height="@dimen/image_size"
+            android:src="@mipmap/common_icon_kaishishijian_default"
+            android:layout_marginLeft="21dp"
+            android:layout_centerVertical="true"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="55dp"
+            android:text="开始时间"
+            android:textColor="#666666"
+            android:textSize="15sp"
+            android:layout_centerVertical="true" />
+        <TextView
+            android:textColor="@color/colorBlack"
+            android:textSize="15sp"
+            android:layout_marginRight="35dp"
+            android:paddingEnd="10dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:id="@+id/tv_start_date"
+            android:gravity="right"
+            android:hint="默认不填为不修改开始时间"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:layout_width="7dp"
+            android:layout_height="12dp"
+            android:src="@mipmap/common_icon_jinru_default"
+            android:layout_alignParentRight="true"
+            android:layout_marginEnd="20dp"
+            android:layout_centerVertical="true"
+            />
+        <View
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="#e7e7e7">
+        </View>
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/bt_continuedtime"
+        android:layout_width="match_parent"
+        android:layout_height="49dp"
+        android:background="@color/colorWhite"
+        android:clickable="true"
+        android:focusable="true">
+
+        <ImageView
+            android:layout_width="@dimen/image_size"
+            android:layout_height="@dimen/image_size"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="21dp"
+            android:src="@mipmap/common_icon_chixushijian_default" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="55dp"
+            android:text="持续时间"
+            android:textColor="#666666"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/tv_continue_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="35dp"
+            android:gravity="right"
+            android:textColor="@color/colorBlack"
+            android:hint="默认不填就不修改持续时间"
+            android:textSize="15sp" />
+
+        <ImageView
+            android:layout_width="7dp"
+            android:layout_height="12dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="20dp"
+            android:src="@mipmap/common_icon_jinru_default" />
+
+        <View
+            android:layout_width="345dp"
+            android:layout_height="0.5dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:background="#e7e7e7"></View>
+    </RelativeLayout>
+    <View
+        android:background="#f6f6f6"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+</LinearLayout>

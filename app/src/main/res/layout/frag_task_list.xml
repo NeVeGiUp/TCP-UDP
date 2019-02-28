@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:background="#E9E9E9">
+
+    /-- include 错误、无数据界面 --/
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/no_task_tv"
+        android:gravity="center"
+        android:text="暂无任务,去任务选项创建任务吧～"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+
+    <RelativeLayout
+        android:gravity="center"
+        android:id="@+id/all_task_view"
+        android:background="@color/colorWhite"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:textColor="@color/colorBlack"
+            android:id="@+id/all_task_view_tv"
+            android:padding="12dp"
+            android:text="全部任务"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:id="@+id/all_task_view_iv"
+            android:layout_marginTop="15dp"
+            android:layout_toRightOf="@+id/all_task_view_tv"
+            android:src="@mipmap/common_but_pullup_down"
+            android:layout_width="10dp"
+            android:layout_height="15dp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:visibility="visible"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:background="#F8F8F8">
+
+        <TextView
+            android:id="@+id/date_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:textColor="#7787A8"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/switch_date_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/bg_red_line_btn"
+            android:gravity="center"
+            android:paddingBottom="3dp"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"
+            android:paddingTop="3dp"
+            android:text="切换"
+            android:textColor="@color/colorMain"
+            android:textSize="12sp" />
+    </RelativeLayout>
+
+
+    /- 无数据视图 include -/
+    <TextView
+        android:id="@+id/no_data_tv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="暂无数据!"
+        android:visibility="visible" />
+
+    <android.support.v7.widget.RecyclerView
+        android:visibility="gone"
+        android:paddingTop="12dp"
+        android:paddingLeft="20dp"
+        android:paddingBottom="20dp"
+        android:overScrollMode="never"
+        android:id="@+id/task_list_rv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </android.support.v7.widget.RecyclerView>
+
+</LinearLayout>

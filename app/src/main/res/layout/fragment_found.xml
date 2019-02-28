@@ -1,0 +1,379 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:scrollbars="none">
+
+    <View
+        android:background="@color/colorMain"
+        android:layout_width="match_parent"
+        android:layout_height="20dp" />
+
+    <RelativeLayout
+        android:id="@+id/back_to_top"
+        android:clickable="true"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:background="@color/colorMain">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="发现"
+            android:textColor="#FFFFFF"
+            android:textSize="17sp" />
+
+        <ImageView
+            android:id="@+id/showWindow"
+            android:layout_width="17dp"
+            android:layout_height="17dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            android:src="@mipmap/top_but_add_default" />
+    </RelativeLayout>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="98dp"
+            android:background="@color/colorWhite">
+            <RelativeLayout
+                android:layout_centerInParent="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:paddingRight="10dp"
+                    android:id="@+id/iv_terminal_icon1"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+
+                    android:src="@mipmap/found_image_zhongduan_default" />
+                <LinearLayout
+                    android:id="@+id/ll_device_num"
+                    android:layout_toRightOf="@id/iv_terminal_icon1"
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:textColor="#666666"
+                        android:textStyle="bold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="终端设备数量" />
+                    <TextView
+                        android:text="0"
+                        android:layout_gravity="center"
+                        android:id="@+id/device_count"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#FFE69930"
+                        android:textSize="24sp" />
+                </LinearLayout>
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:paddingBottom="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorWhite"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/ll_part_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:textStyle="bold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="已创建分区"
+                    android:textColor="#666666"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/partition_count_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+android:text="0"
+                    android:textColor="#FFE69930"
+                    android:textSize="19sp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="0.5dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center"
+                android:background="#979797" />
+
+            <LinearLayout
+                android:id="@+id/ll_wait_for_part"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:textStyle="bold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="待分区设备数"
+                    android:textColor="#666666"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/wait_patition_count_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+android:text="0"
+                    android:textColor="#FFE69930"
+                    android:textSize="19sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:background="#E9E9E9" />
+    </LinearLayout>
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_device_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <View
+        android:background="@color/colorWhite"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <!--<RelativeLayout-->
+    <!--android:background="@color/colorWhite"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="98dp">-->
+    <!--<ImageView-->
+    <!--android:layout_marginLeft="124dp"-->
+    <!--android:layout_marginTop="33dp"-->
+    <!--android:layout_width="40dp"-->
+    <!--android:layout_height="40dp"-->
+    <!--android:src="@mipmap/found_image_zhongduan_default"-->
+    <!--/>-->
+    <!--<TextView-->
+    <!--android:layout_marginLeft="188dp"-->
+    <!--android:layout_marginTop="26dp"-->
+    <!--android:text="终端设备数量"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content" />-->
+    <!--<TextView-->
+    <!--android:layout_marginLeft="188dp"-->
+    <!--android:layout_marginTop="45dp"-->
+    <!--android:textSize="24sp"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:text="200"-->
+    <!--/>-->
+    <!--</RelativeLayout>-->
+    <!--<LinearLayout-->
+    <!--android:background="@color/colorWhite"-->
+    <!--android:orientation="horizontal"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content">-->
+    <!--<LinearLayout-->
+    <!--android:layout_weight="1"-->
+    <!--android:gravity="center"-->
+    <!--android:orientation="vertical"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content">-->
+    <!--<TextView-->
+    <!--android:textSize="12sp"-->
+    <!--android:textColor="#666666"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:text="已创建分区"-->
+    <!--/>-->
+    <!--<TextView-->
+    <!--android:textColor="#FFE69930"-->
+    <!--android:textSize="19sp"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:text="8"-->
+    <!--/>-->
+    <!--</LinearLayout>-->
+    <!--<View-->
+    <!--android:background="#979797"-->
+    <!--android:layout_gravity="center_vertical"-->
+    <!--android:layout_width="1dp"-->
+    <!--android:layout_height="20dp"/>-->
+    <!--<LinearLayout-->
+    <!--android:layout_weight="1"-->
+    <!--android:gravity="center"-->
+    <!--android:orientation="vertical"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content">-->
+    <!--<TextView-->
+    <!--android:textSize="12sp"-->
+    <!--android:textColor="#666666"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:text="待分区设备数"-->
+    <!--/>-->
+    <!--<TextView-->
+    <!--android:textColor="#FFE69930"-->
+    <!--android:textSize="19sp"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:text="50"-->
+    <!--/>-->
+    <!--</LinearLayout>-->
+    <!--</LinearLayout>-->
+    <!--<View-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="10dp"-->
+    <!--android:background="#E9E9E9"/>-->
+    <!--<LinearLayout-->
+    <!--android:background="@color/colorWhite"-->
+    <!--android:orientation="vertical"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="210dp">-->
+    <!--<RelativeLayout-->
+    <!--android:background="@color/colorWhite"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="60dp">-->
+    <!--<TextView-->
+    <!--android:layout_centerVertical="true"-->
+    <!--android:layout_marginLeft="20dp"-->
+    <!--android:textColor="#7787a8"-->
+    <!--android:textSize="16sp"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:text="已创建分区"-->
+    <!--/>-->
+    <!--<TextView-->
+    <!--android:layout_marginRight="20dp"-->
+    <!--android:layout_alignParentRight="true"-->
+    <!--android:layout_centerVertical="true"-->
+    <!--android:textColor="@color/colorMain"-->
+    <!--android:textSize="12sp"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:text="更多>"-->
+    <!--/>-->
+    <!--</RelativeLayout>-->
+    <!--<LinearLayout-->
+    <!--android:gravity="center_vertical"-->
+    <!--android:orientation="horizontal"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="40dp">-->
+    <!--<TextView-->
+    <!--android:layout_marginLeft="20dp"-->
+    <!--android:layout_weight="2"-->
+    <!--android:text="教学区-1年级教学楼"-->
+    <!--android:textSize="14sp"-->
+    <!--android:textColor="@color/colorBlack"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content" />-->
+    <!--<TextView-->
+    <!--android:layout_marginRight="20dp"-->
+    <!--android:layout_weight="0"-->
+    <!--android:textColor="#888888"-->
+    <!--android:textSize="12sp"-->
+    <!--android:text="10个终端"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content" />-->
+    <!--</LinearLayout>-->
+    <!--<View-->
+    <!--android:layout_gravity="center"-->
+    <!--android:layout_width="345dp"-->
+    <!--android:layout_height="0.5dp"-->
+    <!--android:background="#e7e7e7"/>-->
+    <!--<LinearLayout-->
+    <!--android:gravity="center_vertical"-->
+    <!--android:orientation="horizontal"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="40dp">-->
+    <!--<TextView-->
+    <!--android:layout_marginLeft="20dp"-->
+    <!--android:layout_weight="2"-->
+    <!--android:text="教学区-1年级教学楼"-->
+    <!--android:textSize="14sp"-->
+    <!--android:textColor="@color/colorBlack"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content" />-->
+    <!--<TextView-->
+    <!--android:layout_marginRight="20dp"-->
+    <!--android:layout_weight="0"-->
+    <!--android:textColor="#888888"-->
+    <!--android:textSize="12sp"-->
+    <!--android:text="10个终端"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content" />-->
+    <!--</LinearLayout>-->
+    <!--<View-->
+    <!--android:layout_gravity="center"-->
+    <!--android:layout_width="345dp"-->
+    <!--android:layout_height="0.5dp"-->
+    <!--android:background="#e7e7e7"/>-->
+    <!--<LinearLayout-->
+    <!--android:gravity="center_vertical"-->
+    <!--android:orientation="horizontal"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="40dp">-->
+    <!--<TextView-->
+    <!--android:layout_marginLeft="20dp"-->
+    <!--android:layout_weight="2"-->
+    <!--android:text="教学区-1年级教学楼"-->
+    <!--android:textSize="14sp"-->
+    <!--android:textColor="@color/colorBlack"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content" />-->
+    <!--<TextView-->
+    <!--android:layout_marginRight="20dp"-->
+    <!--android:layout_weight="0"-->
+    <!--android:textColor="#888888"-->
+    <!--android:textSize="12sp"-->
+    <!--android:text="10个终端"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content" />-->
+    <!--</LinearLayout>-->
+    <!--</LinearLayout>-->
+    <!--<View-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="10dp"-->
+    <!--android:background="#E9E9E9"/>-->
+    <!--<RelativeLayout-->
+    <!--android:background="@color/colorWhite"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="60dp">-->
+    <!--<TextView-->
+    <!--android:layout_centerVertical="true"-->
+    <!--android:layout_marginLeft="20dp"-->
+    <!--android:textColor="#7787a8"-->
+    <!--android:textSize="16sp"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:text="终端设别"-->
+    <!--/>-->
+    <!--<TextView-->
+    <!--android:layout_marginRight="20dp"-->
+    <!--android:layout_alignParentRight="true"-->
+    <!--android:layout_centerVertical="true"-->
+    <!--android:textColor="@color/colorMain"-->
+    <!--android:textSize="12sp"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:text="管理终端>>"-->
+    <!--/>-->
+    <!--</RelativeLayout>-->
+
+</LinearLayout>

@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:splitMotionEvents="false"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/colorMain">
+
+        <ImageView
+            android:id="@+id/bt_ringing_detail_back"
+            android:layout_width="20dp"
+            android:layout_height="34dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:src="@mipmap/top_but_back_default" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="方案详情"
+            android:textColor="#FFFFFF"
+            android:textSize="17sp" />
+
+        <LinearLayout
+            android:id="@+id/ll_menu"
+            android:layout_alignParentEnd="true"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:gravity="center">
+            <ImageView
+                android:id="@+id/iv_menu"
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:src="@mipmap/top_but_list_default" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/index_ringingtask_rv"
+            android:layout_width="match_parent"
+            android:layout_height="152dp"
+            android:background="@color/colorWhite"
+            android:paddingTop="20dp">
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginStart="16dp"
+                android:src="@mipmap/task_image_daling_default" />
+
+            <TextView
+                android:id="@+id/tv_ringing_detail_name"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:layout_marginLeft="140dp"
+                android:layout_marginRight="20dp"
+                android:maxLines="1"
+                android:textColor="@color/colorBlack"
+                android:textSize="14sp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_ringing_detail_start_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="140dp"
+                    android:layout_marginTop="32dp"
+                    android:text="2001-01-01"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="32dp"
+                    android:text="   至   "
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/tv_ringing_detail_end_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="32dp"
+                    android:text="2001-01-01"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/gong_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="140dp"
+                android:layout_marginTop="58dp"
+                android:text="共"
+                android:textColor="#7787A8"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/tv_ringing_detail_task_mount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="58dp"
+                android:layout_toRightOf="@id/gong_tv"
+                android:text="0"
+                android:textColor="#7787A8"
+                android:textSize="12sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="58dp"
+                android:layout_toRightOf="@+id/tv_ringing_detail_task_mount"
+                android:text="项任务"
+                android:textColor="#7787A8"
+                android:textSize="12sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="84dp"
+                android:gravity="right"
+                android:orientation="horizontal"
+                android:splitMotionEvents="false"
+                android:paddingRight="20dp">
+
+                <LinearLayout
+                    android:id="@+id/btn_ringing_detail_create_task_head"
+                    android:layout_width="wrap_content"
+                    android:layout_height="26dp"
+                    android:background="@drawable/bg_button_border"
+                    android:gravity="center"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp">
+
+                    <ImageView
+
+                        android:id="@+id/iv_create_task"
+                        android:layout_width="11dp"
+                        android:layout_height="11dp"
+                        android:src="@mipmap/daling_but_add_default"
+                        android:tint="@color/colorMain"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="5dp"
+                        android:text="创建任务"
+                        android:textColor="@color/colorMain"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/btn_ringing_detail_batch_create_task"
+                    android:layout_width="wrap_content"
+                    android:layout_height="26dp"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/bg_button_border"
+                    android:gravity="center"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp">
+
+                    <ImageView
+                        android:id="@+id/iv_set_task"
+                        android:layout_width="11dp"
+                        android:layout_height="11dp"
+                        android:src="@mipmap/daling_but_set_default"
+                        android:tint="@color/colorMain"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="5dp"
+                        android:text="批量管理任务"
+                        android:textColor="@color/colorMain"
+                        android:textSize="12sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorunderline"></View>
+
+    <LinearLayout
+        android:id="@+id/ll_ringing_detail_create_task"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:background="@color/colorWhite"
+        android:paddingTop="40dp"
+        android:visibility="visible">
+
+        <LinearLayout
+            android:id="@+id/btn_ringing_detail_create_task"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/bg_button_border_create"
+            android:gravity="center"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp">
+
+            <ImageView
+                android:layout_width="17dp"
+                android:layout_height="17dp"
+                android:background="@mipmap/daling_icon_daling_default" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:text="创建任务"
+                android:textColor="@color/create_ringing"
+                android:textSize="15sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorWhite"
+        android:visibility="gone"
+        android:id="@+id/ll_ringing_detail_task">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_ringing_detail_task"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        </android.support.v7.widget.RecyclerView>
+    </LinearLayout>
+</LinearLayout>

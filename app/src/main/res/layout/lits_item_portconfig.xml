@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:clickable="true"
+    android:focusable="true"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
+    android:layout_width="match_parent"
+    android:layout_height="49dp">
+    <ImageView
+        android:id="@+id/im_porticon"
+        android:layout_centerVertical="true"
+        android:src="@mipmap/common_icon_duankouhao_default"
+        android:layout_width="@dimen/image_size"
+        android:layout_height="@dimen/image_size" />
+    <TextView
+        android:textColor="@color/colorBlack"
+        android:textSize="15sp"
+        android:layout_marginLeft="15dp"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/im_porticon"
+        android:text="端口"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:text="配置"
+        android:paddingRight="20dp"
+        android:textColor="@color/colorBlack"
+        android:textSize="15sp"
+        android:layout_toLeftOf="@+id/im_nextbtn1"
+        android:layout_centerVertical="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <ImageView
+        android:id="@+id/im_nextbtn1"
+        android:layout_width="7dp"
+        android:layout_height="12dp"
+        android:src="@mipmap/common_icon_jinru_default"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        />
+    <View
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#e7e7e7" />
+</RelativeLayout>

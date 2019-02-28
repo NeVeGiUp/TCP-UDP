@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:paddingLeft="@dimen/pending_left_weight"
+    android:paddingRight="@dimen/pending_left_weight"
+    android:background="?android:attr/selectableItemBackground"
+    android:gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="50dp">
+    <TextView
+        android:layout_centerVertical="true"
+        android:maxEms="12"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:id="@+id/tv_music_title"
+        android:textColor="@color/colorBlack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="音乐标题"
+        android:textSize="@dimen/textsize_medium"
+        />
+    <ImageView
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:id="@+id/editmusic"
+        android:src="@mipmap/music_but_edit_default"
+        android:layout_width="16dp"
+        android:layout_height="16dp" />
+    <TextView
+        android:layout_centerVertical="true"
+        android:paddingRight="60dp"
+        android:layout_toLeftOf="@id/editmusic"
+        android:id="@+id/tv_music_duration"
+        android:textColor="@color/colorBlack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2:00"
+        android:textSize="@dimen/textsize_medium"
+        />
+<View
+    android:background="#e7e7e7"
+    android:layout_marginTop="48.5dp"
+    android:layout_width="match_parent"
+    android:layout_height="0.5dp"/>
+</RelativeLayout>

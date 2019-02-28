@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:background="#F3F3F3"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.login.ChooseProjectActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/colorMain">
+        <RelativeLayout
+            android:background="?android:attr/selectableItemBackground"
+            android:clickable="true"
+            android:focusable="true"
+            android:id="@+id/rl_back"
+            android:layout_width="60dp"
+            android:layout_height="match_parent">
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="34dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/pending_left_weight"
+                android:src="@mipmap/top_but_back_default" />
+        </RelativeLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="云播"
+            android:textColor="#FFFFFF"
+            android:textSize="17sp" />
+        <RelativeLayout
+            android:visibility="gone"
+            android:id="@+id/rl_create_project"
+            android:clickable="true"
+            android:focusable="true"
+            android:background="?android:attr/selectableItemBackground"
+            android:layout_alignParentRight="true"
+            android:layout_width="60dp"
+            android:layout_height="match_parent">
+            <TextView
+                android:textColor="@color/colorWhite"
+                android:text="新建"
+                android:layout_centerInParent="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="6dp" />
+        </RelativeLayout>
+    </RelativeLayout>
+    <TextView
+        android:background="#F3F3F3"
+        android:paddingLeft="20dp"
+        android:gravity="center_vertical"
+        android:text="选择进入的项目"
+        android:layout_width="match_parent"
+        android:layout_height="37dp" />
+    <ListView
+        android:divider="@null"
+        android:id="@+id/list_choose_project"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+</LinearLayout>

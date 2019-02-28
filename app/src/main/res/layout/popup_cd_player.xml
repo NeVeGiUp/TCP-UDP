@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/colorWhite">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/tv_task_name"
+            android:textSize="16sp"
+            android:textColor="#7787A8"
+            android:paddingLeft="20dp"
+            android:gravity="center_vertical"
+            android:text="考试收卷提醒（即时任务名称）"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:lines="1"
+            android:layout_height="49dp" />
+        <TextView
+            android:id="@+id/tv_music_size"
+            android:textSize="@dimen/textsize_medium"
+            android:textColor="#7787A8"
+            android:paddingRight="20dp"
+            android:gravity="center_vertical|right"
+            android:text="总曲目：0"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="49dp" />
+
+    </LinearLayout>
+    
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorGray"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="320dp">
+        <ListView
+            android:visibility="visible"
+            android:id="@+id/lv_cd_music"
+            android:background="#ffffff"
+            android:divider="@null"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/tv_no_data"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="暂无数据.."/>
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorMain"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/btn_prev"
+            android:textColor="@color/colorMain"
+            android:text="上一页"
+            android:background="@null"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="2"/>
+        <Button
+            android:id="@+id/btn_next"
+            android:textColor="@color/colorWhite"
+            android:text="下一页"
+            android:background="@color/colorMain"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="2" />
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorMain"/>
+</LinearLayout>

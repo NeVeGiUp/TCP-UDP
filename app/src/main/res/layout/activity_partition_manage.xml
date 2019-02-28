@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/colorMain">
+        <ImageView
+            android:id="@+id/bt_back_found"
+            android:layout_width="20dp"
+            android:layout_height="34dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:src="@mipmap/top_but_back_default" />
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="分区管理"
+            android:textColor="#FFFFFF"
+            android:textSize="17sp" />
+        <ImageView
+            android:id="@+id/im_more_window"
+            android:src="@mipmap/top_but_add_default"
+            android:layout_width="17dp"
+            android:layout_height="17dp"
+            android:layout_marginBottom="4dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            />
+    </RelativeLayout>
+    <TextView
+        android:textSize="14sp"
+        android:paddingLeft="20dp"
+        android:gravity="center_vertical"
+        android:background="@color/colorWhite"
+        android:textColor="#7787A8"
+        android:text="已创建分区"
+        android:layout_width="match_parent"
+        android:layout_height="50dp" />
+    <ListView
+        android:divider="@null"
+        android:id="@+id/list_partition_list"
+        android:background="@color/colorWhite"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <View
+        android:background="@color/colorWhite"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+</LinearLayout>

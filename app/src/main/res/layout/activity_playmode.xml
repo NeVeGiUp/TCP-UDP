@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/colorMain">
+        <ImageView
+            android:id="@+id/bt_back_event"
+            android:layout_width="20dp"
+            android:layout_height="34dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:src="@mipmap/top_but_back_default" />
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="播放模式"
+            android:textColor="#FFFFFF"
+            android:textSize="17sp" />
+        <TextView
+            android:id="@+id/tv_selected"
+            android:textSize="14sp"
+            android:textColor="@color/colorWhite"
+            android:text="选定"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            />
+    </RelativeLayout>
+    <RelativeLayout
+        android:background="@color/colorWhite"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:paddingLeft="20dp"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="140dp">
+            <ImageView
+                android:layout_weight="1"
+                android:src="@mipmap/daling_icon_xunhuanbofang_default"
+                android:layout_width="15dp"
+                android:layout_height="15dp" />
+            <View
+                android:layout_gravity="center_horizontal"
+                android:background="#DDDDDD"
+                android:layout_width="325dp"
+                android:layout_height="0.5dp"/>
+            <ImageView
+                android:layout_weight="1"
+                android:src="@mipmap/daling_icon_suijibofang_default"
+                android:layout_width="15dp"
+                android:layout_height="15dp" />
+            <View
+                android:layout_gravity="center_horizontal"
+                android:background="#DDDDDD"
+                android:layout_width="325dp"
+                android:layout_height="0.5dp"/>
+            <ImageView
+                android:layout_weight="1"
+                android:src="@mipmap/daling_icon_shunxubofang_default"
+                android:layout_width="15dp"
+                android:layout_height="15dp" />
+            <View
+                android:layout_gravity="center_horizontal"
+                android:background="#DDDDDD"
+                android:layout_width="325dp"
+                android:layout_height="0.5dp"/>
+        </LinearLayout>
+        <LinearLayout
+            android:paddingLeft="60dp"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="140dp">
+            <TextView
+                android:gravity="center_vertical"
+                android:layout_weight="1"
+                android:textColor="@color/colorBlack"
+                android:textSize="15sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="循环播放" />
+            <TextView
+                android:gravity="center_vertical"
+                android:layout_weight="1"
+                android:textColor="@color/colorBlack"
+                android:textSize="15sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="随机播放" />
+            <TextView
+                android:gravity="center_vertical"
+                android:layout_weight="1"
+                android:textColor="@color/colorBlack"
+                android:textSize="15sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="顺序播放" />
+
+        </LinearLayout>
+        <RadioGroup
+            android:id="@+id/rg_playmode"
+            android:layout_marginRight="20dp"
+            android:layout_alignParentRight="true"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="140dp">
+            <RadioButton
+                android:id="@+id/bt_loopplay"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <RadioButton
+                android:id="@+id/bt_randomplay"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <RadioButton
+                android:id="@+id/bt_orderplay"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RadioGroup>
+
+    </RelativeLayout>
+</LinearLayout>

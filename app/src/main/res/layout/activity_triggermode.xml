@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/colorMain"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/colorMain">
+        <ImageView
+            android:id="@+id/bt_back_event"
+            android:layout_width="20dp"
+            android:layout_height="34dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:src="@mipmap/top_but_back_default" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="报警触发模式"
+            android:textColor="#FFFFFF"
+            android:textSize="17sp" />
+        <TextView
+            android:textSize="14sp"
+            android:textColor="@color/colorWhite"
+            android:text="保存"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            />
+    </RelativeLayout>
+    <RelativeLayout
+        android:background="@color/colorWhite"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <LinearLayout
+        android:paddingLeft="20dp"
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="280dp">
+        <TextView
+            android:gravity="center_vertical"
+            android:layout_weight="1"
+            android:textColor="@color/colorBlack"
+            android:textSize="15sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="全区报警" />
+        <View
+            android:layout_gravity="center_horizontal"
+            android:background="#DDDDDD"
+            android:layout_width="325dp"
+            android:layout_height="0.5dp"/>
+        <TextView
+            android:gravity="center_vertical"
+            android:layout_weight="1"
+            android:textColor="@color/colorBlack"
+            android:textSize="15sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="邻区+1报警" />
+        <View
+            android:layout_gravity="center_horizontal"
+            android:background="#DDDDDD"
+            android:layout_width="325dp"
+            android:layout_height="0.5dp"/>
+        <TextView
+            android:gravity="center_vertical"
+            android:layout_weight="1"
+            android:textColor="@color/colorBlack"
+            android:textSize="15sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="邻区+2报警" />
+        <View
+            android:layout_gravity="center_horizontal"
+            android:background="#DDDDDD"
+            android:layout_width="325dp"
+            android:layout_height="0.5dp"/>
+        <TextView
+            android:gravity="center_vertical"
+            android:layout_weight="1"
+            android:textColor="@color/colorBlack"
+            android:textSize="15sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="邻区+3报警" />
+        <View
+            android:layout_gravity="center_horizontal"
+            android:background="#DDDDDD"
+            android:layout_width="325dp"
+            android:layout_height="0.5dp"/>
+        <TextView
+            android:gravity="center_vertical"
+            android:layout_weight="1"
+            android:textColor="@color/colorBlack"
+            android:textSize="15sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="邻区+4报警" />
+        <View
+            android:layout_gravity="center_horizontal"
+            android:background="#DDDDDD"
+            android:layout_width="325dp"
+            android:layout_height="0.5dp"/>
+        <TextView
+            android:gravity="center_vertical"
+            android:layout_weight="1"
+            android:textColor="@color/colorBlack"
+            android:textSize="15sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="邻区+0报警" />
+        <View
+            android:layout_gravity="center_horizontal"
+            android:background="#DDDDDD"
+            android:layout_width="325dp"
+            android:layout_height="0.5dp"/>
+    </LinearLayout>
+
+    <RadioGroup
+        android:id="@+id/rg_playmode"
+        android:layout_marginRight="20dp"
+        android:layout_alignParentRight="true"
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="280dp">
+        <RadioButton
+            android:id="@+id/bt_whole_areaalarm"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <RadioButton
+            android:id="@+id/bt_otherarea_plus1"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <RadioButton
+            android:id="@+id/bt_otherarea_plus2"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <RadioButton
+            android:id="@+id/bt_otherarea_plus3"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <RadioButton
+            android:id="@+id/bt_otherarea_plus4"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <RadioButton
+            android:id="@+id/bt_otherarea_plus0"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RadioGroup>
+    </RelativeLayout>
+</LinearLayout>

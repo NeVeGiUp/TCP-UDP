@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:layout_marginBottom="20dp"
+    android:orientation="horizontal"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="60dp">
+    <RelativeLayout
+        android:layout_centerInParent="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:paddingRight="10dp"
+            android:layout_centerVertical="true"
+            android:id="@+id/iv_tab_icon"
+            android:src="@drawable/selector_could_login"
+            android:layout_width="40dp"
+            android:layout_height="40dp" />
+        <TextView
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/iv_tab_icon"
+            android:textColor="@drawable/selector_login"
+            android:id="@+id/tv_tab"
+            android:text="云登录"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

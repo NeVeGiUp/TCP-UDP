@@ -1,0 +1,657 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/colorMain">
+
+        <ImageView
+            android:id="@+id/bt_back_event"
+            android:layout_width="20dp"
+            android:layout_height="34dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:src="@mipmap/top_but_back_default" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="定时任务详情页"
+            android:textColor="#FFFFFF"
+            android:textSize="17sp" />
+
+        <TextView
+            android:id="@+id/tv_complete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            android:text="完成"
+            android:textColor="@color/colorWhite"
+            android:textSize="14sp" />
+    </RelativeLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fitsSystemWindows="true">3
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fitsSystemWindows="true"
+            android:orientation="vertical">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:background="@color/colorWhite">
+
+                <EditText
+                    android:id="@+id/et_task_name"
+                    android:layout_width="320dp"
+                    android:layout_height="30dp"
+                    android:layout_centerInParent="true"
+                    android:background="@null"
+                    android:hint="请填写定时任务的名称"
+                    android:maxLines="1"
+                    android:textSize="14sp"
+                    android:maxLength="15"
+                    android:maxEms="15"/>
+
+                <View
+                    android:layout_width="345dp"
+                    android:layout_height="1dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10dp"
+                    android:background="#e7e7e7" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:background="#F6F6F6" />
+
+            <RelativeLayout
+                android:id="@+id/bt_starttime"
+                android:layout_width="match_parent"
+                android:layout_height="49dp"
+                android:background="@color/colorWhite"
+                android:clickable="true"
+                android:focusable="true">
+
+                <ImageView
+                    android:layout_width="@dimen/image_size"
+                    android:layout_height="@dimen/image_size"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="21dp"
+                    android:src="@mipmap/common_icon_kaishishijian_default" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="55dp"
+                    android:text="开始时间"
+                    android:textColor="#666666"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/tv_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="35dp"
+                    android:gravity="right"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="15sp" />
+
+                <ImageView
+                    android:layout_width="7dp"
+                    android:layout_height="12dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="20dp"
+                    android:src="@mipmap/common_icon_jinru_default" />
+
+                <View
+                    android:layout_width="345dp"
+                    android:layout_height="0.5dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:background="#e7e7e7"></View>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/bt_continuedtime"
+                android:layout_width="match_parent"
+                android:layout_height="49dp"
+                android:background="@color/colorWhite"
+                android:clickable="true"
+                android:focusable="true">
+
+                <ImageView
+                    android:layout_width="@dimen/image_size"
+                    android:layout_height="@dimen/image_size"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="21dp"
+                    android:src="@mipmap/common_icon_chixushijian_default" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="55dp"
+                    android:text="持续时间"
+                    android:textColor="#666666"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/tv_continue_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="35dp"
+                    android:gravity="right"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="15sp" />
+
+                <ImageView
+                    android:layout_width="7dp"
+                    android:layout_height="12dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="20dp"
+                    android:src="@mipmap/common_icon_jinru_default" />
+
+                <View
+                    android:layout_width="345dp"
+                    android:layout_height="0.5dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:background="#e7e7e7"></View>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/bt_executiondate"
+                android:layout_width="match_parent"
+                android:layout_height="49dp"
+                android:background="@color/colorWhite"
+                android:clickable="true"
+                android:focusable="true">
+
+                <ImageView
+                    android:layout_width="@dimen/image_size"
+                    android:layout_height="@dimen/image_size"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="21dp"
+                    android:src="@mipmap/common_icon_zhixingriqi_default" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="55dp"
+                    android:text="执行日期"
+                    android:textColor="#666666"
+                    android:textSize="15sp" />
+
+                <ImageView
+                    android:layout_width="7dp"
+                    android:layout_height="12dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="20dp"
+                    android:src="@mipmap/common_icon_jinru_default" />
+
+                <View
+                    android:layout_width="345dp"
+                    android:layout_height="0.5dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:background="#e7e7e7"></View>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_execution_date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#f8fcff"
+                android:orientation="vertical"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:paddingTop="20dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="已选日期"
+                        android:textColor="@color/infoColor"
+                        android:textSize="13sp" />
+                    <Button
+                        android:id="@+id/btn_clear_date"
+                        android:layout_width="50dp"
+                        android:layout_height="24dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="60dp"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/btn_task_clear_date"
+                        android:text="清除"
+                        android:textColor="@color/textColor"
+                        android:textSize="@dimen/textsize_little" />
+
+                    <Button
+                        android:id="@+id/btn_get_date"
+                        android:layout_width="50dp"
+                        android:layout_height="24dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/loginout"
+                        android:text="修改"
+                        android:textColor="@color/textColor"
+                        android:textSize="@dimen/textsize_little" />
+
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/tv_date"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:lineSpacingExtra="5dp"
+                    android:text="" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/bt_selectmusic"
+                android:layout_width="match_parent"
+                android:layout_height="49dp"
+                android:background="@color/colorWhite"
+                android:clickable="true"
+                android:focusable="true">
+
+                <ImageView
+                    android:layout_width="@dimen/image_size"
+                    android:layout_height="@dimen/image_size"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="21dp"
+                    android:src="@mipmap/common_icon_xuanzeyinyue_default" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="55dp"
+                    android:text="选择音乐"
+                    android:textColor="#666666"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/tv_select_music_size"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="35dp"
+                    android:gravity="right"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="15sp" />
+
+                <ImageView
+                    android:layout_width="7dp"
+                    android:layout_height="12dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="20dp"
+                    android:src="@mipmap/common_icon_jinru_default" />
+
+                <View
+                    android:layout_width="345dp"
+                    android:layout_height="0.5dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:background="#e7e7e7"></View>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_selected_music"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#f8fcff"
+                android:orientation="vertical"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:paddingTop="20dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="已选音乐"
+                        android:textColor="@color/infoColor"
+                        android:textSize="13sp" />
+
+                    <Button
+                        android:id="@+id/btn_clear_music"
+                        android:layout_width="50dp"
+                        android:layout_height="24dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="60dp"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/btn_task_clear_date"
+                        android:text="清除"
+                        android:textColor="@color/textColor"
+                        android:textSize="@dimen/textsize_little" />
+
+                    <Button
+                        android:id="@+id/btn_select_music"
+                        android:layout_width="50dp"
+                        android:layout_height="24dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/loginout"
+                        android:text="修改"
+                        android:textColor="@color/textColor"
+                        android:textSize="@dimen/textsize_little" />
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/tv_select_music"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:lineSpacingExtra="5dp"
+                    android:text="" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/bt_playmode"
+                android:layout_width="match_parent"
+                android:layout_height="49dp"
+                android:background="@color/colorWhite"
+                android:clickable="true"
+                android:focusable="true">
+
+                <ImageView
+                    android:layout_width="@dimen/image_size"
+                    android:layout_height="@dimen/image_size"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="21dp"
+                    android:src="@mipmap/common_icon_bofangmoshi_default" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="55dp"
+                    android:text="播放模式"
+                    android:textColor="#666666"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/tv_playmode"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="35dp"
+                    android:gravity="right"
+                    android:hint="默认循环播放"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="15sp" />
+
+                <ImageView
+                    android:layout_width="7dp"
+                    android:layout_height="12dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="20dp"
+                    android:src="@mipmap/common_icon_jinru_default" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/bt_priority"
+                android:layout_width="match_parent"
+                android:layout_height="49dp"
+                android:background="@color/colorWhite"
+                android:clickable="true"
+                android:focusable="true">
+
+                <ImageView
+                    android:layout_width="@dimen/image_size"
+                    android:layout_height="@dimen/image_size"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="21dp"
+                    android:src="@mipmap/yxj" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="55dp"
+                    android:text="优先级"
+                    android:textColor="#666666"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/tv_priority"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="35dp"
+                    android:gravity="right"
+                    android:hint="默认高级"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="15sp" />
+
+                <ImageView
+                    android:layout_width="7dp"
+                    android:layout_height="12dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="20dp"
+                    android:src="@mipmap/common_icon_jinru_default" />
+            </RelativeLayout>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:background="#F6F6F6" />
+
+            <RelativeLayout
+                android:id="@+id/bt_selectterminal"
+                android:layout_width="match_parent"
+                android:layout_height="49dp"
+                android:background="@color/colorWhite"
+                android:clickable="true"
+                android:focusable="true">
+
+                <ImageView
+                    android:layout_width="@dimen/image_size"
+                    android:layout_height="@dimen/image_size"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="21dp"
+                    android:src="@mipmap/common_icon_xuanzezhongduan_default" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="55dp"
+                    android:text="选择终端"
+                    android:textColor="#666666"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/tv_select_terminal_size"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="35dp"
+                    android:gravity="right"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="15sp" />
+
+                <ImageView
+                    android:layout_width="7dp"
+                    android:layout_height="12dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="20dp"
+                    android:src="@mipmap/common_icon_jinru_default" />
+
+                <View
+                    android:layout_width="345dp"
+                    android:layout_height="0.5dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:background="#e7e7e7"></View>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_selected_terminal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#f8fcff"
+                android:orientation="vertical"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:paddingTop="20dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="已选终端"
+                        android:textColor="@color/infoColor"
+                        android:textSize="13sp" />
+                    <Button
+                        android:id="@+id/btn_clear_device"
+                        android:layout_width="50dp"
+                        android:layout_height="24dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="60dp"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/btn_task_clear_date"
+                        android:text="清除"
+                        android:textColor="@color/textColor"
+                        android:textSize="@dimen/textsize_little" />
+
+                    <Button
+                        android:id="@+id/btn_get_device"
+                        android:layout_width="50dp"
+                        android:layout_height="24dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/loginout"
+                        android:text="修改"
+                        android:textColor="@color/textColor"
+                        android:textSize="@dimen/textsize_little" />
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/tv_select_device"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:lineSpacingExtra="5dp" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/bt_volume"
+                android:layout_width="match_parent"
+                android:layout_height="49dp"
+                android:background="@color/colorWhite"
+                android:clickable="true"
+                android:focusable="true">
+
+                <ImageView
+                    android:layout_width="@dimen/image_size"
+                    android:layout_height="@dimen/image_size"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="21dp"
+                    android:src="@mipmap/common_icon_yinliang_default" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="55dp"
+                    android:text="音量"
+                    android:textColor="#666666"
+                    android:textSize="15sp" />
+
+                <ImageView
+                    android:layout_width="7dp"
+                    android:layout_height="12dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="20dp"
+                    android:src="@mipmap/common_icon_jinru_default" />
+
+                <TextView
+                    android:id="@+id/tv_volume"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="35dp"
+                    android:gravity="right"
+                    android:hint="默认音量"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="15sp" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:background="#F6F6F6" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#f6f6f6"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp">
+
+                <Button
+                    android:id="@+id/btn_task_control"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="@color/colorMain"
+                    android:text="启动任务"
+                    android:textColor="@color/colorWhite" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:background="#F6F6F6" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
+
+

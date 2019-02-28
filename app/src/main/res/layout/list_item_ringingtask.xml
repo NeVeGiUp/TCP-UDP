@@ -1,0 +1,103 @@
+<RelativeLayout
+    android:id="@+id/index_ringingtask_rv"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/colorWhite"
+    android:layout_width="match_parent"
+    android:layout_height="90dp"
+    android:layout_marginRight="16dp">
+    <ImageView
+        android:src="@mipmap/task_image_daling_default"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="16dp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="111dp"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/tv_ring_status"
+            android:textSize="12sp"
+            android:gravity="center"
+            android:text="执行中"
+            android:textColor="#AD5700"
+            android:background="#FFEDCA"
+            android:layout_width="50dp"
+            android:layout_height="20dp"
+            />
+        <TextView
+            android:paddingLeft="8dp"
+            android:id="@+id/tv_ring_planname"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:textColor="@color/colorBlack"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/tv_ring_starttime"
+            android:textSize="12sp"
+            android:layout_marginLeft="111dp"
+            android:layout_marginTop="28dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+        <TextView
+            android:layout_marginTop="28dp"
+            android:textSize="12sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="至"
+            />
+        <TextView
+            android:id="@+id/tv_ring_overtime"
+            android:layout_marginTop="28dp"
+            android:textSize="12sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+    </LinearLayout>
+    <TextView
+        android:id="@+id/gong_tv"
+        android:textColor="#7787A8"
+        android:textSize="12sp"
+        android:text="共"
+        android:layout_marginLeft="111dp"
+        android:layout_marginTop="50dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:layout_toRightOf="@id/gong_tv"
+        android:id="@+id/tv_ring_task_amount"
+        android:textColor="#7787A8"
+        android:textSize="12sp"
+        android:text="0"
+        android:layout_marginTop="50dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:layout_toRightOf="@+id/tv_ring_task_amount"
+        android:textColor="#7787A8"
+        android:textSize="12sp"
+        android:text="项任务"
+        android:layout_marginTop="50dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <View
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@color/colorGray" />
+
+</RelativeLayout>

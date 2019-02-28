@@ -1,0 +1,111 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:paddingLeft="@dimen/pending_left_weight"
+    android:paddingRight="@dimen/pending_left_weight"
+    android:background="?android:attr/selectableItemBackground"
+    android:layout_width="match_parent"
+    android:layout_height="100dp">
+    <ImageView
+        android:id="@+id/tm_musiccover"
+        android:layout_centerVertical="true"
+        android:src="@mipmap/music_fengmian_moren_small"
+        android:layout_width="80dp"
+        android:layout_height="80dp" />
+    <TextView
+        android:textColor="@color/colorBlack"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:id="@+id/tv_musicname"
+        android:layout_toRightOf="@+id/tm_musiccover"
+        android:textSize="20sp"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:text="港台音乐aaaaaaaaaaaaaaaa"
+        android:layout_marginRight="30dp"
+        />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/tv_musicname"
+        android:layout_marginBottom="32dp">
+
+        <TextView
+            android:textColor="@color/gray_999"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="共 " />
+
+        <TextView
+            android:textColor="@color/gray_999"
+            android:id="@+id/tv_musicamount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:textColor="@color/gray_999"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" 首歌" />
+
+        <!--<TextView-->
+            <!--android:visibility="invisible"-->
+            <!--android:text="(溢出)"-->
+            <!--android:textColor="@color/gray_999"-->
+
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content" />-->
+    </LinearLayout>
+    <TextView
+        android:textColor="@color/colorMain"
+        android:text="音乐文件已超出显示数量"
+        android:visibility="gone"
+        android:id="@+id/tv_shouge"
+        android:layout_alignStart="@+id/tv_musicname"
+        android:layout_marginBottom="10dp"
+        android:layout_alignParentBottom="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <LinearLayout
+        android:id="@+id/ll_chose"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/tv_musicname"
+        android:visibility="gone"
+        android:layout_marginBottom="10dp">
+
+        <TextView
+            android:textColor="@color/gray_999"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="已选 " />
+
+        <TextView
+            android:textColor="@color/gray_999"
+            android:id="@+id/tv_music_size"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/tv_musicname"
+            android:layout_alignBottom="@+id/tv_musicname"
+            android:layout_alignParentEnd="true"
+            android:gravity="right"
+            android:textAlignment="0"
+            android:text="0" />
+
+        <TextView
+            android:textColor="@color/gray_999"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" 首歌" />
+    </LinearLayout>
+    <View
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#e7e7e7">
+    </View>
+</RelativeLayout>

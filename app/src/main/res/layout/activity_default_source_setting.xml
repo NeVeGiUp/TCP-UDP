@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/colorMain"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/colorMain">
+        <ImageView
+            android:id="@+id/bt_back_event"
+            android:layout_width="20dp"
+            android:layout_height="34dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:src="@mipmap/top_but_back_default" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="默认音源设置"
+            android:textColor="#FFFFFF"
+            android:textSize="17sp" />
+        <Button
+            android:id="@+id/bt_save_default_vol"
+            android:background="@null"
+            android:layout_marginRight="-10dp"
+            android:textSize="14sp"
+            android:textColor="@color/colorWhite"
+            android:text="保存"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            />
+    </RelativeLayout>
+    <RelativeLayout
+        android:background="@color/colorWhite"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/tv_selected_vol"
+            android:layout_width="0dp"
+            android:layout_height="0dp" />
+        <TextView
+            android:gravity="center_vertical"
+            android:paddingLeft="20dp"
+            android:textSize="14sp"
+            android:text="默音权限"
+            android:layout_width="wrap_content"
+            android:layout_height="49dp" />
+        <com.kyleduo.switchbutton.SwitchButton
+            android:id="@+id/source_switchButton"
+            app:kswAnimationDuration="300"
+            app:kswThumbColor="#FFFFFF"
+            android:checked="false"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:paddingRight="20dp"
+            android:layout_width="68dp"
+            android:layout_height="40dp" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:paddingLeft="@dimen/pending_left_weight"
+        android:paddingRight="@dimen/pending_left_weight"
+        android:id="@+id/rl_visible_source_setting"
+        android:background="@color/colorWhite"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RadioGroup
+            android:id="@+id/rg_default_source"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+            <RadioButton
+                android:text="0%"
+                android:id="@+id/rb_percent_0"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <RadioButton
+                android:text="10%"
+                android:id="@+id/rb_percent_10"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <RadioButton
+                android:text="20%"
+                android:id="@+id/rb_percent_20"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <RadioButton
+                android:text="30%"
+                android:id="@+id/rb_percent_30"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <RadioButton
+                android:text="40%"
+                android:id="@+id/rb_percent_40"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <RadioButton
+                android:text="50%"
+                android:id="@+id/rb_percent_50"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <RadioButton
+                android:text="60%"
+                android:id="@+id/rb_percent_60"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <RadioButton
+                android:text="70%"
+                android:id="@+id/rb_percent_70"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <RadioButton
+                android:text="80%"
+                android:id="@+id/rb_percent_80"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <RadioButton
+                android:text="90%"
+                android:id="@+id/rb_percent_90"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <RadioButton
+                android:text="100%"
+                android:id="@+id/rb_percent_100"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RadioGroup>
+    </RelativeLayout>
+    <View
+        android:background="@color/colorWhite"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+</LinearLayout>

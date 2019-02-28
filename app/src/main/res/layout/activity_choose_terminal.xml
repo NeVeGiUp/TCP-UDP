@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/topbar_height"
+        android:background="@color/colorMain">
+
+        <ImageView
+            android:id="@+id/bt_back_found"
+            android:layout_width="20dp"
+            android:layout_height="34dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/pending_left_weight"
+            android:src="@mipmap/top_but_back_default" />
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="选择终端"
+            android:textColor="@color/textColor"
+            android:textSize="@dimen/textsize_topbar" />
+
+        <TextView
+            android:id="@+id/tv_save_bind_terminal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            android:text="保存"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/textsize_medium" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_show"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorWhite"
+        android:paddingTop="10dp"
+        android:paddingRight="15dp"
+        android:visibility="visible">
+
+        <LinearLayout
+            android:id="@+id/ll_filter"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginLeft="20dp">
+            <TextView
+                android:gravity="left|center_vertical"
+                android:id="@+id/bt_filter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:text="筛选"
+                android:textColor="@color/colorBlack" />
+            <ImageView
+                android:layout_marginTop="2dp"
+                android:layout_marginLeft="16dp"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:src="@mipmap/common_icon_xiala_default"/>
+        </LinearLayout>
+        <TextView
+            android:id="@+id/tv_check_size"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:text="已选择:0" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/list_choose_terminal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorWhite" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorWhite" />
+</LinearLayout>

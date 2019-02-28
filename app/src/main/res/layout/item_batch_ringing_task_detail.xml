@@ -1,0 +1,108 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rv_time_task"
+    android:orientation="vertical"
+    android:background="@color/colorWhite"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="17dp"
+    android:layout_marginRight="17dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <CheckBox
+            android:id="@+id/cb_ringing_task"
+            android:layout_width="wrap_content"
+            android:layout_marginRight="17dp"
+            android:layout_marginTop="10dp"
+            android:layout_height="@dimen/part_list_height" />
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="140dp"
+            android:gravity="center_vertical"
+            android:background="@color/colorWhite"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/tv_task_status"
+                    android:textSize="12sp"
+                    android:gravity="center"
+                    android:text="执行中"
+                    android:textColor="#AD5700"
+                    android:background="#FFEDCA"
+                    android:layout_width="50dp"
+                    android:layout_height="20dp"
+                    />
+                <TextView
+                    android:paddingLeft="8dp"
+                    android:id="@+id/tv_task_name"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:text="任务名称"
+                    android:textColor="@color/colorBlack"/>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_task_cycle"
+                android:layout_marginTop="10dp"
+                android:textSize="12sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="left|center_vertical">
+
+                <ImageView
+                    android:layout_width="14dp"
+                    android:layout_height="14dp"
+                    android:visibility="gone"
+                    android:layout_marginRight="5dp"
+                    android:background="@mipmap/daling_icon_tixing_default" />
+                <TextView
+                    android:id="@+id/tv_task_execute_time"
+                    android:textSize="12sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="left|center_vertical">
+
+                <TextView
+                    android:id="@+id/tv_task_continue_time"
+                    android:textSize="12sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="20dp"
+                    />
+                <TextView
+                    android:id="@+id/tv_task_volume"
+                    android:textSize="12sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    />
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/colorunderline"></View>
+
+</LinearLayout>

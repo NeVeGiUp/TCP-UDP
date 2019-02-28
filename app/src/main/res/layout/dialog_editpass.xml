@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="250dp"
+    android:layout_height="170dp"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    android:background="@drawable/bg_whitebtn"
+    >
+    <!--<TextView-->
+        <!--android:id="@+id/title"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="42.5dp"-->
+        <!--android:gravity="center"-->
+        <!--android:text="尊敬的用户："-->
+        <!--android:layout_gravity="left"-->
+        <!--android:textSize="14sp"-->
+        <!--/>-->
+    <TextView
+        android:textColor="@color/colorBlack"
+        android:paddingBottom="30dp"
+        android:text="设备密码一旦修改，所有终端的设备
+密码将随之更改，确认修改设备密码
+吗？"
+        android:layout_marginTop="42.5dp"
+        android:id="@+id/custom_okcancel_dialog_title"
+        android:layout_width="wrap_content"
+        android:layout_height="86dp"
+        android:layout_gravity="center"
+        android:gravity="center_vertical"
+        android:textSize="13sp"
+        />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#d9d9d9"
+        />
+    <LinearLayout
+        android:id="@+id/custom_cancel_dialog_ll"
+        android:layout_width="match_parent"
+        android:layout_height="44dp">
+        <Button
+            android:text="取消"
+            android:id="@+id/custom_cancel_dialog_confirm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="@color/colorGray"
+            android:background="@null"
+            />
+        <Button
+            android:text="确定"
+            android:textColor="@color/colorMain"
+            android:id="@+id/custom_ok_dialog_confirm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@null"
+            />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@mipmap/progress_1" android:duration="@integer/anim_time" />
+    <item android:drawable="@mipmap/progress_2" android:duration="@integer/anim_time" />
+    <item android:drawable="@mipmap/progress_3" android:duration="@integer/anim_time" />
+    <item android:drawable="@mipmap/progress_4" android:duration="@integer/anim_time" />
+    <item android:drawable="@mipmap/progress_5" android:duration="@integer/anim_time" />
+    <item android:drawable="@mipmap/progress_6" android:duration="@integer/anim_time" />
+</animation-list>

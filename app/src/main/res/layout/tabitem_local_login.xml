@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:paddingBottom="20dp"
+    android:orientation="horizontal"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="60dp">
+    <ImageView
+        android:layout_marginLeft="20dp"
+        android:layout_gravity="center"
+        android:src="@drawable/selector_local_login"
+        android:layout_width="30dp"
+        android:layout_height="30dp" />
+    <TextView
+        android:textColor="@drawable/selector_login"
+        android:paddingLeft="10dp"
+        android:layout_gravity="center"
+        android:text="局域网登录"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</LinearLayout>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp">
+    <!--<View-->
+    <!--android:id="@+id/music_list_selected"-->
+    <!--android:background="@android:color/holo_blue_dark"-->
+    <!--android:layout_width="2dp"-->
+    <!--android:layout_height="75dp" />-->
+
+    <CheckBox
+        android:id="@+id/cb_local_music"
+        android:layout_width="wrap_content"
+        android:layout_marginLeft="2dp"
+        android:layout_height="@dimen/part_list_height"
+        android:layout_marginRight="15dp" />
+    <!--<ImageView-->
+    <!--android:id="@+id/music_list_icon"-->
+    <!--android:scaleType="centerCrop"-->
+    <!--android:layout_marginLeft="5dp"-->
+    <!--android:layout_toRightOf="@id/music_list_selected"-->
+    <!--android:src="@mipmap/currency_but_guanbi_default"-->
+    <!--android:layout_width="50dp"-->
+    <!--android:layout_height="50dp" />-->
+    <TextView
+        android:id="@+id/tv_music_list_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="2dp"
+        android:layout_toRightOf="@id/cb_local_music"
+        android:ellipsize="end"
+        android:paddingRight="10dp"
+        android:singleLine="true"
+        android:text="音乐标题"
+        android:textColor="@color/colorBlack"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/tv_music_file_size"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_music_list_title"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="3dp"
+        android:layout_toRightOf="@id/cb_local_music"
+        android:ellipsize="end"
+        android:maxLines="2"
+        android:paddingRight="10dp"
+        android:text="MP3 . 2M"
+        android:textColor="#8D99B2"
+        android:textSize="12sp" />
+
+    <View
+        android:layout_marginLeft="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_below="@+id/tv_music_file_size"
+        android:layout_marginTop="12dp"
+        android:background="#c0c0c0" />
+
+</RelativeLayout>

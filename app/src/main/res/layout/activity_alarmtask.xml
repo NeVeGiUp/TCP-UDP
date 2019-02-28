@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/colorMain">
+        <ImageView
+            android:id="@+id/bt_back_event"
+            android:layout_width="20dp"
+            android:layout_height="34dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:src="@mipmap/top_but_back_default" />
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="报警任务"
+            android:textColor="@color/textColor"
+            android:textSize="17sp" />
+        <LinearLayout
+            android:visibility="gone"
+            android:id="@+id/ll_showWindow"
+            android:layout_alignParentEnd="true"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:gravity="center">
+            <ImageView
+                android:id="@+id/im_add_instant_task"
+                android:layout_width="17dp"
+                android:layout_height="17dp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:src="@mipmap/top_but_add_default" />
+        </LinearLayout>
+    </RelativeLayout>
+    <TextView
+        android:textColor="#7787a8"
+        android:textSize="16sp"
+        android:paddingLeft="20dp"
+        android:background="@color/colorWhite"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="报警任务列表"
+        android:gravity="center_vertical"
+        />
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_alarm"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </android.support.v7.widget.RecyclerView>
+</LinearLayout>

@@ -1,0 +1,96 @@
+<resources>
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password (optional)</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+    <string name="title_activity_test">Sign in</string>
+
+    <!-- login page -->
+    <string name="app_name">CloudBroadcast</string>
+    <string name="host_ip">TimerIp</string>
+    <string name="input_host_ip">Please input timer Ip</string>
+    <string name="username">username</string>
+    <string name="input_username">Please input username</string>
+    <string name="userpsw">password</string>
+    <string name="input_userpsw">Please input password</string>
+    <string name="login">log in</string>
+    <string name="forget_psw">forgot password?</string>
+    <string name="language">language</string>
+    <string name="login_input_ip_is_empty">Pleare input Ip</string>
+    <string name="login_input_ok_ip">Pleare input true Ip</string>
+    <string name="register">Register</string>
+    <string name="phone_number">phone number</string>
+    <string name="insert_phone_number">Please insert phone number</string>
+    <string name="re_pass">Repeat password</string>
+    <string name="sms_code">SMS code</string>
+    <string name="get_sms_code">Get verification code</string>
+    <string name="commit_reg">commit Register</string>
+    <!-- login page -->
+
+    <!-- normal -->
+    <string name="cance">cancel</string>
+    <string name="confim">confim</string>
+    <string name="all">AllofTheme</string>
+    <string name="reset">Reset</string>
+    <string name="filter">Filter</string>
+    <!-- normal -->
+
+    <!-- bottom nav -->
+    <string name="today">Today</string>
+    <string name="found">Found</string>
+    <string name="event">Event</string>
+    <string name="music">Music</string>
+    <string name="personal">Personal</string>
+    <!-- bottom nav -->
+
+    <!-- found page -->
+    <string name="terminal_num">Terminal amount</string>
+    <string name="part_created">Created Part</string>
+    <string name="part_manager">Part Manager</string>
+    <string name="terminal_none_part">待分区设备数</string>
+    <string name="more">More></string>
+    <string name="terminal_of_part">个终端</string>
+    <string name="terminal_manager">Terminal Manager</string>
+    <string name="online">Online</string>
+    <string name="offline">Offline</string>
+    <string name="busy">Busy</string>
+    <string name="clock">Clock</string>
+    <string name="error">Error</string>
+    <string name="source_device">Source Device</string>
+    <string name="panel_device">Panel Device</string>
+    <string name="amplifier_device">Amplifier Device</string>
+    <string name="alarm_device">Alarm_Device</string>
+    <string name="unknow_device">Unknow Device</string>
+    <string name="in">在”</string>
+    <string name="devcie_type">“设备类型、”</string>
+
+
+    <!-- found page -->
+    <string name="plese_select_type_source">请选择音源类型</string>
+
+
+    <!-- cloud http-->
+    <string name="cloud_success">success</string>
+    <string name="cloud_failed">failed</string>
+    <string name="cloud_login">cloudLogin</string>
+    <string name="cloud_authorization">cloudAuthorization</string>
+    <string name="cloud_register_code">cloudgetRegisterCode</string>
+    <string name="cloud_register">cloudgetRegister</string>
+    <string name="cloud_project_list">cloudgetProjectList</string>
+    <string name="cloud_add_project">cloudAddProject</string>
+    <string name="cloud_forget_pass">cloudForgotPassword</string>
+    <string name="cloud_forgot_pass_code">cloudForgotPassCode</string>
+    <string name="version">V1.3.6</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+
+
+</resources>
